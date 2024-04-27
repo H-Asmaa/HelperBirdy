@@ -1,0 +1,35 @@
+import Button from "../components/Button";
+import Navbar from "../components/Navbar"
+import volunteer from "../assets/volunteers.png"
+
+
+const Home = () => {
+  return (
+		<>
+			<Navbar />
+			<main className=''>
+				<div className='grid grid-cols-1 md:grid-cols-2 bg-emerald-800'>
+					<section className='text-white max-w-6xl mx-auto p-10 '>
+						<h2 className='head'>Your Contribution has an effect</h2>
+						<p className='headPara'>
+							Welcome to HelperBird, where passion meets purpose! Our platform
+							connects volunteers with organizations and causes in need,
+							empowering individuals to make a meaningful impact with their
+							skills and expertise.
+						</p>
+						<a href='/donate'>
+							<div className='mt-8'>
+								<Button value='Watch Video' className='btnHome' />
+							</div>
+						</a>
+					</section>
+					<section className=''>
+						<img src={volunteer} alt='volunteers' className='h-72 pt-10' />
+					</section>
+				</div>
+			</main>
+		</>
+	);
+}
+
+export default Home
