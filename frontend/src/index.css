@@ -1,3 +1,70 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* .............Navbar......... */
+.list{
+  @apply mr-7 text-white hover:bg-yellow-700 hover:rounded-full text-base lg:px-5 mt-4;
+  font-size:14px;
+}
+.logo{
+  color: #965A00
+}
+.NavBtn{
+  @apply text-white bg-yellow-700 rounded-full px-3 py-2;
+}
+/* .........................home page.................... */
+.head{
+  @apply lg:text-4xl font-extrabold leading-snug
+}
+.headPara{
+  @apply mt-4 leading-7 lg:text-lg
+}
+.btnHome{
+  background-color: #965A00;
+  @apply rounded-full text-white px-3 py-2;
+}
+/* ...........................cards................. */
+.mission{
+    color: #965A00;
+    @apply text-3xl font-bold text-center mb-8 pt-10
+
+}
+.cardTop{
+  background-color: #D3B9AE;
+  @apply text-black rounded-xl  p-6
+}
+/* ............Help...... */
+.helpbtn{
+  background-color:#D3B9AE;
+  @apply rounded-full text-white px-2 py-1;
+
+}
+/* ..................footer.............. */
+.footer{
+  background-color:#D3B9AE;
+  @apply p-10;
+}
+.link{
+  @apply text-black active:text-yellow-700
+}
+/* .........signup.............. */
+.signupbg{
+  background-color: #D3B9AE;
+  @apply rounded-3xl  p-6;
+}
+.signupBtn{
+  background-color: #965A00;
+  @apply rounded-3xl  p-6 text-white px-3 py-2;
+}
+  /* ....................Queue...... */
+  .queue{
+    background-color: #D3B9AE;
+  
+  }
+
