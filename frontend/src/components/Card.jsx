@@ -1,4 +1,5 @@
-import leave  from "../assets/leaves.png"
+import leave from "../assets/leaves.png"
+import { Card } from "flowbite-react";
 
 const Card = () => {
   return (
@@ -10,14 +11,7 @@ const Card = () => {
 				</div>
 				<div>
           <h2 className='mission' style={{ marginTop: "-20px" }}>Mission and Goals</h2>
-          
-"use client";
-
-import { Card } from "flowbite-react";
-
-export function Component() {
-
-    <Card href="#" className="max-w-sm">
+          <Card href="#" className="max-w-sm">
       <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
         Noteworthy technology acquisitions 2021
       </h5>
