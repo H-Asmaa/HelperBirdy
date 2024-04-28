@@ -59,7 +59,7 @@
   @apply rounded-3xl  p-6;
 }
 .signupBtn{
-  background-color: #D3B9AE;
+  background-color: #965A00;
   @apply rounded-3xl  p-6 text-white px-3 py-2;
 
 }
