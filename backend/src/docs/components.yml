@@ -19,6 +19,31 @@ components:
         name: fake name
         role: user
 
+    Post:
+      type: object
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        content:
+          type: string
+        author:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+      example:
+        id: 123
+        title: Example Post
+        content: This is an example post.
+        author: 5ebac534954b54139806c112
+        createdAt: 2020-05-12T16:18:04.793Z
+        updatedAt: 2020-05-12T16:18:04.793Z
+
     Token:
       type: object
       properties:
@@ -57,6 +82,15 @@ components:
           example:
             code: 400
             message: Email already taken
+    BadRequest:
+      description: Bad request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            code: 400
+            message: Bad request
     Unauthorized:
       description: Unauthorized
       content:
