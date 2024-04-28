@@ -27,7 +27,6 @@ const Home = () => {
 					<section className=' flex items-center justify-center'>
 						<img src={volunteer} alt='volunteers' className='h-72' />
 					</section>
-					
 				</div>
 			</main>
 			<Card />

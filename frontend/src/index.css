@@ -30,3 +30,8 @@
   @apply rounded-full text-white px-3 py-2;
 }
 /* ...........................cards................. */
+.mission{
+    color: #965A00;
+    @apply text-3xl font-bold 
+
+}
