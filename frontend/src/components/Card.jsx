@@ -11,9 +11,7 @@ const Card = () => {
 					<img src={leave} alt='leave' />
 				</div>
       </div>
-      <div>
-        <h2 className="mission">Mission and Goals</h2>
-      </div>
+      
 		</main>
 	);
 }
