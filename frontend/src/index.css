@@ -32,6 +32,10 @@
 /* ...........................cards................. */
 .mission{
     color: #965A00;
-    @apply text-3xl font-bold text-center
+    @apply text-3xl font-bold text-center mb-8 pt-10
 
+}
+.cardTop{
+  background-color: #D3B9AE;
+  @apply text-black rounded-xl  p-6
 }
