@@ -1,7 +1,7 @@
 import leave from "../assets/leaves.png"
 import { Card } from "flowbite-react";
 
-const Card = () => {
+const Card1 = () => {
   return (
 		<main>
 			<div
@@ -31,4 +31,4 @@ const Card = () => {
 	);
 }
 
-export default Card
+export default Card1
