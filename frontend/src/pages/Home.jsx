@@ -4,6 +4,7 @@ import volunteer from "../assets/volunteers.png"
 import Card from "../components/Card1";
 import Plans from "../components/Plans";
 import Help from "../components/Help";
+import Footer from "../components/Footer";
 
 
 const Home = () => {
@@ -33,7 +34,8 @@ const Home = () => {
 			</main>
 			<Card />
 			<Plans />
-			<Help/>
+			<Help />
+			<Footer/>
 		</>
 	);
 }

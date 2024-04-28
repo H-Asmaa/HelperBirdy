@@ -45,3 +45,11 @@
   @apply rounded-full text-white px-2 py-1;
 
 }
+/* ..................footer.............. */
+.footer{
+  background-color:#D3B9AE;
+  @apply p-10;
+}
+.link{
+  @apply text-black active:text-yellow-700
+}
