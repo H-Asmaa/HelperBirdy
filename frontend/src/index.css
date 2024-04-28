@@ -53,3 +53,13 @@
 .link{
   @apply text-black active:text-yellow-700
 }
+/* .........signup.............. */
+.signupbg{
+  background-color: #D3B9AE;
+  @apply rounded-3xl  p-6;
+}
+.signupBtn{
+  background-color: #D3B9AE;
+  @apply rounded-3xl  p-6 text-white px-3 py-2;
+
+}
