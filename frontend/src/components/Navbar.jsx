@@ -46,12 +46,8 @@ export default function Navbar() {
 						</li>
 					</ul>
 				</nav>
-				<button className='flex items-center'>
-					<img
-						src={honesty}
-						alt='a helping hand'
-						className='w-4 btnHome text-white'
-					/>
+				<button className='flex items-center NavBtn'>
+					<img src={honesty} alt='a helping hand' className='w-10' />
 					Donate
 				</button>
 			</div>
