@@ -32,6 +32,6 @@
 /* ...........................cards................. */
 .mission{
     color: #965A00;
-    @apply text-3xl font-bold 
+    @apply text-3xl font-bold text-center
 
 }
