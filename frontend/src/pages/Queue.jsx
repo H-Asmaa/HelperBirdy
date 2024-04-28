@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar"
 
 import post from "../assets/volunteers.png"
 import Button from "../components/Button";
+import Footer from "../components/Footer";
 
 
 
@@ -86,7 +87,8 @@ const Queue = () => {
 						/>
 					</div>
 				</div>
-			</div>
+      </div>
+      <Footer/>
 		</div>
 	);
 }
