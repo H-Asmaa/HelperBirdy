@@ -7,9 +7,9 @@ const Home = () => {
   return (
 		<>
 			<Navbar />
-			<main className=''>
-				<div className='grid grid-cols-1 md:grid-cols-2 bg-emerald-800'>
-					<section className='text-white max-w-6xl mx-auto p-10 '>
+			<main className='bg-emerald-800 '>
+				<div className='grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto p-10'>
+					<section className='text-white text-justify ml-5'>
 						<h2 className='head'>Your Contribution has an effect</h2>
 						<p className='headPara'>
 							Welcome to HelperBird, where passion meets purpose! Our platform
@@ -23,7 +23,7 @@ const Home = () => {
 							</div>
 						</a>
 					</section>
-					<section className=''>
+					<section className=' flex items-center justify-center'>
 						<img src={volunteer} alt='volunteers' className='h-72 pt-10' />
 					</section>
 				</div>
