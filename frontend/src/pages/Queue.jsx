@@ -13,7 +13,7 @@ const Queue = () => {
 			<div className='bg-emerald-800 '>
 				<div className='max-w-7xl mx-auto'>
 					<h2 className='text-3xl font-bold text-white mb-4'>Post Queue</h2>
-					<div className='flex items-center justify-center border border-gray-300 text-white rounded-3xl queue'>
+					<div className='flex items-center justify-center border border-gray-300 rounded-3xl queue'>
 						<img src={post} alt='post' className='w-64' />
 						<p className='ml-6'>
 							Welcome to HelperBird, where passion meets purpose! Our platform
@@ -32,7 +32,7 @@ const Queue = () => {
 			</div>
 			<div className='bg-emerald-800 '>
 				<div className='max-w-7xl mx-auto'>
-					<div className='flex items-center justify-center border border-gray-300 text-white rounded-3xl queue'>
+					<div className='flex items-center justify-center border border-gray-300 rounded-3xl queue'>
 						<img src={post} alt='post' className='w-64' />
 						<p className='ml-6'>
 							Welcome to HelperBird, where passion meets purpose! Our platform
@@ -51,7 +51,7 @@ const Queue = () => {
 			</div>
 			<div className='bg-emerald-800 '>
 				<div className='max-w-7xl mx-auto'>
-					<div className='flex items-center justify-center border border-gray-300 text-white rounded-3xl queue'>
+					<div className='flex items-center justify-center border border-gray-300 rounded-3xl queue'>
 						<img src={post} alt='post' className='w-64' />
 						<p className='ml-6'>
 							Welcome to HelperBird, where passion meets purpose! Our platform
@@ -71,7 +71,7 @@ const Queue = () => {
 			<div className='bg-emerald-800 '>
 				<div className='max-w-7xl mx-auto'>
 					
-					<div className='flex items-center justify-center border border-gray-300 text-white rounded-3xl queue'>
+					<div className='flex items-center justify-center border border-gray-300 rounded-3xl queue'>
 						<img src={post} alt='post' className='w-64' />
 						<p className='ml-6'>
 							Welcome to HelperBird, where passion meets purpose! Our platform
