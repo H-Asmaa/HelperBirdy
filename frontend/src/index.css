@@ -39,3 +39,9 @@
   background-color: #D3B9AE;
   @apply text-black rounded-xl  p-6
 }
+/* ............Help...... */
+.helpbtn{
+  background-color:#D3B9AE;
+  @apply rounded-full text-white px-2 py-1;
+
+}

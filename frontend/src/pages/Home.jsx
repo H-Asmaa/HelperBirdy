@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar"
 import volunteer from "../assets/volunteers.png"
 import Card from "../components/Card1";
 import Plans from "../components/Plans";
+import Help from "../components/Help";
 
 
 const Home = () => {
@@ -31,7 +32,8 @@ const Home = () => {
 				</div>
 			</main>
 			<Card />
-			<Plans/>
+			<Plans />
+			<Help/>
 		</>
 	);
 }
