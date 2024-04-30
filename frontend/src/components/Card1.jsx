@@ -29,7 +29,7 @@ const Card1 = () => {
 								<Card
 									href='#'
 									className='cardTop mb-6 5 scale-in-top mx-4 lg:mx-0'>
-									<h2 className='font-normal text-center'>{mission.title}</h2>
+									<h2 className='text-center font-bold'>{mission.title}</h2>
 									<hr />
 									<p>{mission.text}</p>
 								</Card>
