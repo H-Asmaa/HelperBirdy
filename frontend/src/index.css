@@ -79,9 +79,19 @@
   @apply lg:ml-4 font-bold
 }
 /* ............Help...... */
+.help-container{
+  @apply bg-orange-500 text-white p-10;
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.help-title{
+  @apply mb-3 text-lg;
+}
 .helpbtn{
   background-color:#D3B9AE;
   @apply rounded-full text-white px-2 py-1;
+  width:220px;
 
 }
 /* ..................footer.............. */
@@ -118,5 +128,15 @@
   .plan2-title{
     @apply text-lg my-3;
   }
+  .help-title{
+    @apply mb-3 text-center;
+    font-size:18px;
+  }
+  .helpbtn{
+    @apply rounded-md;
+    width:100%;
+    font-size:14px;
+  }
+
 }
 
