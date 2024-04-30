@@ -1,62 +1,41 @@
-import leave from '../assets/leaves.png';
+import { useState } from 'react';
+// import leave from '../assets/leaves.png';
 import { Card } from 'flowbite-react';
+import { data } from '../mission' 
 
 const Card1 = () => {
+	const [missions]=useState(data)
 	return (
-		<main>
-			<div className='flex justify-center items-center mt-10'>
+		<main className='py-12 max-w-7xl mx-auto'>
+			<div className='flex justify-center items-center'>
+				{/* <div>
+					<img src={leave} alt='leave' className='h-40' />
+				</div> */}
 				<div>
-					<img src={leave} alt='leave' />
-				</div>
-				<div>
-					<h2 className='mission' style={{ marginTop: '-80px' }}>
-						Mission and Goals
-					</h2>
+					<h2 className='mission'>Mission & Goals</h2>
 					<div className='flex justify-center'>
-						<Card href='#' className='max-w-sm cardTop mb-6'>
-							<p className='font-normal'>
+						<Card href='#' className='max-w-2xl cardTop mb-6 scale-in-top '>
+							<p className='font-normal text-center'>
 								The mission is to help people around the world in their quest to
 								help people in need
 							</p>
 						</Card>
 					</div>
 					<div className='grid md:grid-cols-3 gap-8'>
-						<div className='flex flex-col items-center'>
-							<Card href='#' className='max-w-sm cardTop'>
-								<h5 className='text-xl font-bold tracking-tight text-black'>
-									Volunteers from anywhere in the world
-								</h5>
-								<p className='font-normal'>
-									The mission is to help people around the world in their quest
-									to help people in need
-								</p>
-							</Card>
-						</div>
-						<div className='flex flex-col items-center'>
-							<Card href='#' className='max-w-sm cardTop'>
-								<h5 className='text-xl font-bold '>
-									Connect to places in need of your help
-								</h5>
-								<p className='font-normal'>
-									The mission is to help people around the world in their quest
-									to help people in need
-								</p>
-							</Card>
-						</div>
-						<div className='flex flex-col items-center'>
-							<Card href='#' className='max-w-sm cardTop'>
-								<h5 className='text-xl font-bold '>Offer your expertise</h5>
-								<p className='font-normal'>
-									The mission is to help people around the world in their quest
-									to help people in need
-								</p>
-							</Card>
-						</div>
+						{missions.map((mission) => (
+							<div key={mission.id}>
+								<Card href='#' className='cardTop mb-6 5 scale-in-top '>
+									<h2 className='font-normal text-center'>{mission.title}</h2>
+									<hr />
+									<p>{mission.text}</p>
+								</Card>
+							</div>
+						))}
 					</div>
 				</div>
-				<div>
+				{/* <div>
 					<img src={leave} alt='leave' />
-				</div>
+				</div> */}
 			</div>
 		</main>
 	);
