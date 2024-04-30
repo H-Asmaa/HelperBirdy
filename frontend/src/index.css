@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Lugrasimo&family=Pinyon+Script&family=Tangerine:wght@700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* .............Navbar......... */
+.list{
+  @apply mr-0 lg:mr-7 text-black lg:text-white hover:bg-yellow-700 hover:rounded-full text-base lg:px-5 mt-4;
+  font-size:14px;
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal; 
+}
+.logo{
+  color: #965A00;
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  @apply text-2xl
+}
+.NavBtn{
+  @apply text-white bg-yellow-700 rounded-md px-2 py-1 mt-2 ;
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/* .........................home page.................... */
+.head{
+  @apply lg:text-4xl font-extrabold leading-snug;
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.headPara{
+  @apply mt-4 leading-7;
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.btnHome{
+  background-color: #965A00;
+  @apply rounded-full text-white px-3 py-2;
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/* ...........................cards (mission)................. */
+.mission{
+    color: #965A00;
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+    @apply text-lg lg:text-5xl font-bold text-center mb-8 pt-10
+}
+.cardTop{
+  background-color: #D3B9AE;
+  @apply text-black rounded-xl p-4
+}
+.scale-in-top{animation:scale-in-top .5s cubic-bezier(.25,.46,.45,.94) both}
+/*....................... animation ............*/
+@keyframes scale-in-top{0%{transform:scale(0);transform-origin:50% 0;opacity:1}100%{transform:scale(1);transform-origin:50% 0;opacity:1}}
+/* ............Help...... */
+.helpbtn{
+  background-color:#D3B9AE;
+  @apply rounded-full text-white px-2 py-1;
+
+}
+/* ..................footer.............. */
+.footer{
+  background-color:#D3B9AE;
+  @apply p-10;
+}
+.link{
+  @apply text-black active:text-yellow-700
+}
+/* .........signup.............. */
+.signupbg{
+  background-color: #D3B9AE;
+  @apply rounded-3xl  p-6;
+}
+.signupBtn{
+  background-color: #965A00;
+  @apply rounded-3xl  p-6 text-white px-3 py-2;
+}
+  /* ....................Queue...... */
+  .queue{
+    background-color: #D3B9AE;
+  
+  }
+
