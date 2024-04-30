@@ -97,10 +97,36 @@
 /* ..................footer.............. */
 .footer{
   background-color:#D3B9AE;
-  @apply p-10;
+  @apply p-6 ;
+  font-family: "Lugrasimo", cursive;
+}
+.footer-title{
+  @apply text-lg lg:text-2xl;
+  color:#965A00;
+}
+.footer-text{
+  @apply  hidden lg:block lg:max-w-lg pr-6;
+  font-size:14px;
+}
+.footer-list{
+  @apply flex pl-14 mt-20;
+  font-size:14px;
 }
 .link{
   @apply text-black active:text-yellow-700
+}
+.footerBtn{
+  background-color:#965A00;
+  @apply rounded-full px-3 py-2;
+
+}
+.footer-Details{
+  @apply lg:flex items-center justify-between;
+  font-size:14px;
+}
+.footer-span{
+  color:#965A00;
+
 }
 /* .........signup.............. */
 .signupbg{

@@ -7,6 +7,7 @@ import Help from "../components/Help";
 import Footer from "../components/Footer";
 
 
+
 const Home = () => {
   return (
 		<>
@@ -42,6 +43,7 @@ const Home = () => {
 			<Card />
 			<Plans />
 			<Help />
+			
 			<Footer />
 		</>
 	);
