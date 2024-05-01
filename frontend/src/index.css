@@ -138,10 +138,23 @@
   @apply rounded-3xl  p-6 text-white px-3 py-2;
 }
   /* ....................Queue...... */
-  .queue{
-    background-color: #D3B9AE;
+.queueTitle{
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  @apply  text-lg lg:text-2xl font-bold text-white pt-3 mt-6 mb-4 mx-4
+}
+.queueContainer{
+  @apply max-w-7xl mx-auto grid md:grid-cols-1 p-6
   
-  }
+}
+.queueholder{
+  background-color: #D3B9AE;
+  @apply mb-14 rounded-2xl;
+}
+.queueBtn{
+  @apply bg-teal-400 text-white px-3 py-2 rounded-full mt-4
+}
 
 /* ....................mobile view................. */
 @media only screen and (max-width:600px){
