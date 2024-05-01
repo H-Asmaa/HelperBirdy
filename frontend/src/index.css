@@ -32,7 +32,7 @@
 }
 /* .........................home page.................... */
 .head{
-  @apply lg:text-4xl font-extrabold leading-snug;
+  @apply text-xl lg:text-4xl font-extrabold leading-snug;
   font-family: "Lugrasimo", cursive;
   font-weight: 400;
   font-style: normal;
@@ -45,7 +45,7 @@
 }
 .btnHome{
   background-color: #965A00;
-  @apply rounded-full text-white px-3 py-2;
+  @apply rounded-lg lg:rounded-full text-white px-3 py-2;
   font-family: "Lugrasimo", cursive;
   font-weight: 400;
   font-style: normal;
@@ -56,7 +56,7 @@
     font-family: "Tangerine", cursive;
     font-weight: 700;
     font-style: normal;
-    @apply text-lg lg:text-5xl font-bold text-center mb-8 pt-10
+    @apply text-3xl lg:text-5xl font-bold text-center mb-8 pt-10
 }
 .cardTop{
   background-color: #D3B9AE;
@@ -65,19 +65,68 @@
 .scale-in-top{animation:scale-in-top .5s cubic-bezier(.25,.46,.45,.94) both}
 /*....................... animation ............*/
 @keyframes scale-in-top{0%{transform:scale(0);transform-origin:50% 0;opacity:1}100%{transform:scale(1);transform-origin:50% 0;opacity:1}}
+/*...................... plan..............?*/
+.plan{
+  background-color: #965A00;
+}
+.plan1-title{
+  @apply text-4xl mb-3;
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.plan2-title{
+  @apply lg:ml-4 font-bold
+}
 /* ............Help...... */
+.help-container{
+  @apply bg-orange-500 text-white p-10;
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.help-title{
+  @apply mb-3 text-lg;
+}
 .helpbtn{
   background-color:#D3B9AE;
   @apply rounded-full text-white px-2 py-1;
+  width:220px;
 
 }
 /* ..................footer.............. */
 .footer{
   background-color:#D3B9AE;
-  @apply p-10;
+  @apply p-6 ;
+  font-family: "Lugrasimo", cursive;
+}
+.footer-title{
+  @apply text-lg lg:text-2xl;
+  color:#965A00;
+}
+.footer-text{
+  @apply  hidden lg:block lg:max-w-lg pr-6;
+  font-size:14px;
+}
+.footer-list{
+  @apply flex pl-14 mt-20;
+  font-size:14px;
 }
 .link{
   @apply text-black active:text-yellow-700
+}
+.footerBtn{
+  background-color:#965A00;
+  @apply rounded-full px-3 py-2;
+
+}
+.footer-Details{
+  @apply lg:flex items-center justify-between;
+  font-size:14px;
+}
+.footer-span{
+  color:#965A00;
+
 }
 /* .........signup.............. */
 .signupbg{
@@ -93,4 +142,27 @@
     background-color: #D3B9AE;
   
   }
+
+/* ....................mobile view................. */
+@media only screen and (max-width:600px){
+  .headPara, .btnHome{
+    font-size:12PX;
+  }
+  .plan1-title{
+    @apply text-3xl
+  }
+  .plan2-title{
+    @apply text-lg my-3;
+  }
+  .help-title{
+    @apply mb-3 text-center;
+    font-size:18px;
+  }
+  .helpbtn{
+    @apply rounded-md;
+    width:100%;
+    font-size:14px;
+  }
+
+}
 

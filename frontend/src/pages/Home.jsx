@@ -7,12 +7,13 @@ import Help from "../components/Help";
 import Footer from "../components/Footer";
 
 
+
 const Home = () => {
   return (
 		<>
 			<Navbar />
 			<main className='bg-emerald-800 '>
-				<div className='grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto p-10'>
+				<div className='grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto p-6 lg:p-10'>
 					<section className='text-white text-justify ml-5'>
 						<h2 className='head'>
 							Your Contribution has
@@ -42,6 +43,7 @@ const Home = () => {
 			<Card />
 			<Plans />
 			<Help />
+			
 			<Footer />
 		</>
 	);
