@@ -1,96 +1,45 @@
-import Navbar from "../components/Navbar"
-
-import post from "../assets/volunteers.png"
-import Button from "../components/Button";
+import { useState } from 'react';
+import Navbar from '../components/Navbar';
 import Footer from "../components/Footer";
-
-
+import { data } from '../queue';
+import Button from '../components/Button';
 
 const Queue = () => {
-  return (
-		<div>
+	const [queues] = useState(data);
+	return (
+		<div className='bg-emerald-800'>
 			<Navbar />
-			<div className='bg-emerald-800 '>
-				<div className='max-w-7xl mx-auto'>
-					<h2 className='text-3xl font-bold text-white mb-4'>Post Queue</h2>
-					<div className='flex items-center justify-center border border-gray-300 rounded-3xl queue'>
-						<img src={post} alt='post' className='w-64' />
-						<p className='ml-6'>
-							Welcome to HelperBird, where passion meets purpose! Our platform
-							connects volunteers with organizations and causes in need,
-							empowering individuals to make a meaningful impact with their
-							skills and expertise.
-						</p>
-					</div>
-					<div className='mt-6 pb-4 '>
-						<Button
-							value='view post'
-							className='bg-green-400 text-white rounded-full p-2'
-						/>
-					</div>
+			<div className=' max-w-7xl mx-auto min-h-screen'>
+				<h2 className='queueTitle'>POST QUEUE</h2>
+				<div className='queueContainer'>
+					{queues.map((queue) => (
+						<div key={queue.id} className='queueholder'>
+							<div className='flex justify-end items-end sticky '>
+								<img
+									src={queue.img1}
+									alt='bookmark'
+									className='w-12 hidden lg:block'
+								/>
+							</div>
+							<div className='lg:flex items-center'>
+								<img src={queue.img2} alt='volunteers' className='w-80' />
+								<div className=' px-4 lg:px-0 ml-0 lg:ml-12'>
+									<h3 className='font-bold text-lg lg:text-3xl pb-4 mt-4 lg:mt-0'>
+										{queue.title}
+									</h3>
+									<p>{queue.text}</p>
+									<div className='pb-4 lg:pb-0'>
+										<Button value='View Post' className='queueBtn' />
+									</div>
+								</div>
+							</div>
+						</div>
+					))}
 				</div>
 			</div>
-			<div className='bg-emerald-800 '>
-				<div className='max-w-7xl mx-auto'>
-					<div className='flex items-center justify-center border border-gray-300 rounded-3xl queue'>
-						<img src={post} alt='post' className='w-64' />
-						<p className='ml-6'>
-							Welcome to HelperBird, where passion meets purpose! Our platform
-							connects volunteers with organizations and causes in need,
-							empowering individuals to make a meaningful impact with their
-							skills and expertise.
-						</p>
-					</div>
-					<div className='mt-6 pb-4'>
-						<Button
-							value='view post'
-							className='bg-green-400 text-white rounded-full p-2'
-						/>
-					</div>
-				</div>
-			</div>
-			<div className='bg-emerald-800 '>
-				<div className='max-w-7xl mx-auto'>
-					<div className='flex items-center justify-center border border-gray-300 rounded-3xl queue'>
-						<img src={post} alt='post' className='w-64' />
-						<p className='ml-6'>
-							Welcome to HelperBird, where passion meets purpose! Our platform
-							connects volunteers with organizations and causes in need,
-							empowering individuals to make a meaningful impact with their
-							skills and expertise.
-						</p>
-					</div>
-					<div className='mt-6 pb-4'>
-						<Button
-							value='view post'
-							className='bg-green-400 text-white rounded-full p-2'
-						/>
-					</div>
-				</div>
-			</div>
-			<div className='bg-emerald-800 '>
-				<div className='max-w-7xl mx-auto'>
-					
-					<div className='flex items-center justify-center border border-gray-300 rounded-3xl queue'>
-						<img src={post} alt='post' className='w-64' />
-						<p className='ml-6'>
-							Welcome to HelperBird, where passion meets purpose! Our platform
-							connects volunteers with organizations and causes in need,
-							empowering individuals to make a meaningful impact with their
-							skills and expertise.
-						</p>
-					</div>
-					<div className='mt-6 pb-4'>
-						<Button
-							value='view post'
-							className='bg-green-400 text-white rounded-full p-2'
-						/>
-					</div>
-				</div>
-      </div>
-      <Footer/>
+			<Footer />
 		</div>
 	);
-}
+};
 
-export default Queue
+export default Queue;
