@@ -135,8 +135,21 @@
 }
 .signupBtn{
   background-color: #965A00;
-  @apply rounded-3xl  p-6 text-white px-3 py-2;
+  @apply rounded-3xl text-white px-2 py-1;
 }
+.form-container {
+    position: relative;
+    @apply lg:mx-0 mx-3
+}
+
+.logo-container {
+  position: absolute;
+  bottom: 100px; 
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.2; 
+}
+
   /* ....................Queue...... */
 .queueTitle{
   font-family: "Lugrasimo", cursive;
